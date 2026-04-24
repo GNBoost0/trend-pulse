@@ -1,10 +1,32 @@
 'use client';
 
+import Script from 'next/script';
+
+const ADSENSE_CLIENT_ID = ''; // À remplir après approbation Google AdSense
+
+export function AdSenseScript() {
+  if (!ADSENSE_CLIENT_ID) return null;
+  return (
+    <Script
+      async
+      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+      crossOrigin="anonymous"
+      strategy="afterInteractive"
+    />
+  );
+}
+
 export function AdBanner() {
   return (
-    <div className="w-full flex justify-center my-4">
-      <div className="w-full max-w-[728px] h-[90px] bg-surface-800/30 border border-dashed border-white/10 rounded-lg flex items-center justify-center text-xs text-gray-600">
-        Espace publicitaire — 728×90
+    <div className="w-full flex justify-center my-6">
+      <div className="w-full max-w-[728px] min-h-[90px]">
+        <ins className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client={ADSENSE_CLIENT_ID}
+          data-ad-slot=""
+          data-ad-format="horizontal"
+          data-full-width-responsive="true"
+        />
       </div>
     </div>
   );
@@ -12,16 +34,28 @@ export function AdBanner() {
 
 export function AdSidebar() {
   return (
-    <div className="w-full max-w-[300px] h-[250px] bg-surface-800/30 border border-dashed border-white/10 rounded-lg flex items-center justify-center text-xs text-gray-600 mx-auto">
-      Espace publicitaire — 300×250
+    <div className="w-full min-h-[250px] my-4">
+      <ins className="adsbygoogle"
+        style={{ display: 'block' }}
+        data-ad-client={ADSENSE_CLIENT_ID}
+        data-ad-slot=""
+        data-ad-format="rectangle"
+        data-full-width-responsive="true"
+      />
     </div>
   );
 }
 
 export function AdInArticle() {
   return (
-    <div className="w-full h-[100px] bg-surface-800/30 border border-dashed border-white/10 rounded-lg flex items-center justify-center text-xs text-gray-600 my-8">
-      Espace publicitaire — In-article
+    <div className="w-full min-h-[120px] my-8">
+      <ins className="adsbygoogle"
+        style={{ display: 'block', textAlign: 'center' }}
+        data-ad-client={ADSENSE_CLIENT_ID}
+        data-ad-slot=""
+        data-ad-layout="in-article"
+        data-ad-format="fluid"
+      />
     </div>
   );
 }

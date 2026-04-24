@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { AdSenseScript } from '@/components/Adsense';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="alternate" type="application/rss+xml" title="Trend Pulse RSS" href="/rss.xml" />
       </head>
       <body className="min-h-screen flex flex-col">
+        <AdSenseScript />
         {children}
       </body>
     </html>
