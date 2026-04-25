@@ -81,7 +81,3 @@ Housemarque a trouvé sa voix. Et elle résonne fort.
 - [Test Saros — La meilleure exclusivité de la PlayStation 5](https://www.gamekult.com/jeux/saros-3050888242/test.html) — Gamekult, avril 2026
 - [Capcom célèbre les 7 millions de ventes de Resident Evil Requiem](https://www.gamekult.com/) — Gamekult, avril 2026
 - [Diablo 4 : Lord of Hatred — Le digne héritier de Diablo 2](https://www.gamekult.com/jeux/diablo-iv-lord-of-hatred-3050889003/test.html) — Gamekult, avril 2026
-
-## À lire aussi
-- [Google mise 40 milliards sur Anthropic](/ia/google-investit-40-milliards-anthropic)
-- [Fuite ANTS : 12 millions de comptes compromis](/cyber/fuite-donnees-ants-12-millions)

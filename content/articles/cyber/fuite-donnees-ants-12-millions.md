@@ -118,7 +118,3 @@ Dans un registre plus positif, Mozilla a récemment démontré l'utilité de l'I
 - [Parcoursup piraté pendant six mois](https://www.01net.com/actualites/fuite-donnees-parcoursup-cyberattaque-passee-inapercue-pendant-six-mois.html) — 01net, avril 2026
 - [Les magasins U piratés](https://www.01net.com/actualites/les-magasins-u-ont-ete-pirates-les-donnees-des-clients-ont-ete-compromises.html) — 01net, avril 2026
 - [Apple corrige une faille exploitée par le FBI](https://www.01net.com/actualites/mettez-jour-iphone-apple-corrige-faille-exploitee-fbi.html) — 01net, avril 2026
-
-## À lire aussi
-- [Google mise 40 milliards sur Anthropic](/ia/google-investit-40-milliards-anthropic)
-- [Bitcoin : analyse du marché à 77 000 $](/crypto/bitcoin-77k-analyse-avril-2026)

@@ -99,7 +99,3 @@ L'IA de surveillance forestière ne suffit pas à elle seule. Mais combinée à 
 ## Sources
 - [Incendie en forêt de Fontainebleau : comment l'IA veille sur nos forêts](https://www.franceinfo.fr/faits-divers/incendie/incendie-en-foret-de-fontainebleau-comment-l-ia-veille-sur-nos-forets_7959368.html) — franceinfo, avril 2026
 - [L'IA surveille les forêts françaises en temps réel](https://www.franceinfo.fr/internet/intelligence-artificielle/) — franceinfo, 2026
-
-## À lire aussi
-- [Google mise 40 milliards sur Anthropic](/ia/google-investit-40-milliards-anthropic)
-- [Fuite ANTS : 12 millions de comptes compromis](/cyber/fuite-donnees-ants-12-millions)

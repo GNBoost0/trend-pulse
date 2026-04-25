@@ -77,7 +77,3 @@ Si vous investissez en crypto, trois principes restent valables quel que soit le
 ## Sources
 - [Cours BTC/USD en temps réel](https://api.coinbase.com/v2/prices/BTC-USD/spot) — Coinbase, données du 25/04/2026
 - [Google investit 40 milliards dans Anthropic](https://www.franceinfo.fr/internet/intelligence-artificielle/google-va-investir-40-milliards-de-dollars-dans-la-start-up-d-ia-anthropic-dont-10-immediatement_7962260.html) — franceinfo, 24/04/2026 (contexte tech global)
-
-## À lire aussi
-- [Google mise 40 milliards sur Anthropic](/ia/google-investit-40-milliards-anthropic)
-- [Fuite ANTS : 12 millions de comptes compromis](/cyber/fuite-donnees-ants-12-millions)

@@ -109,7 +109,3 @@ Trois choses :
 - [Nouvelle fuite chez Anthropic](https://www.01net.com/actualites/nouvelle-fuite-chez-anthropic-curieux-trouve-moyen-utiliser-claude-mythos-insu-start-up.html) — 01net, avril 2026
 - [Meta va espionner ses salariés pour entraîner ses IA](https://www.01net.com/actualites/clics-frappes-au-clavier-captures-decran-meta-va-espionner-ses-salaries-pour-entrainer-ses-ia.html) — 01net, avril 2026
 - [Panne mondiale de ChatGPT](https://www.01net.com/actualites/panne-mondiale-de-chatgpt-lia-ne-repond-plus-que-se-passe-t-il.html) — 01net, avril 2026
-
-## À lire aussi
-- [Bitcoin : le cours à 77 000 $, analyse](/crypto/bitcoin-77k-analyse-avril-2026)
-- [Fuite de données ANTS : 12 millions de comptes touchés](/cyber/fuite-donnees-ants-12-millions)

@@ -25,25 +25,21 @@ export default function TopicPage({ params }: { params: { slug: string } }) {
     <>
       <Header />
       <main className="flex-1">
-        {/* Hero */}
-        <div className="border-b border-white/[0.04]" style={{background: `linear-gradient(135deg, var(--bg-primary), var(--bg-secondary))`}}>
+        <div className="border-b" style={{background:'var(--hero-gradient)',borderColor:'var(--border)'}}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            <div className="flex items-center gap-2 mb-3 text-xs text-gray-600">
-              <Link href="/" className="hover:text-white transition-colors">Accueil</Link>
-              <span>/</span>
-              <span className="text-gray-400">{topic.name}</span>
+            <div className="flex items-center gap-2 mb-3 text-xs" style={{color:'var(--text-muted)'}}>
+              <Link href="/" className="hover:opacity-70">Accueil</Link><span>/</span>
+              <span style={{color:'var(--text-secondary)'}}>{topic.name}</span>
             </div>
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl">{topic.icon}</span>
               <div>
-                <h1 className="text-2xl sm:text-3xl font-extrabold text-white">{topic.name}</h1>
-                <p className="text-sm text-gray-500 mt-1 max-w-lg">{topic.description}</p>
+                <h1 className="text-2xl sm:text-3xl font-extrabold" style={{color:'var(--text-primary)'}}>{topic.name}</h1>
+                <p className="text-sm mt-1 max-w-lg" style={{color:'var(--text-secondary)'}}>{topic.description}</p>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Articles */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           {articles.length > 0 ? (
             <>
@@ -55,7 +51,7 @@ export default function TopicPage({ params }: { params: { slug: string } }) {
               )}
             </>
           ) : (
-            <p className="text-center text-gray-600 py-20">Bientôt des articles ici…</p>
+            <p className="text-center py-20" style={{color:'var(--text-muted)'}}>Bientôt des articles ici…</p>
           )}
         </div>
       </main>
