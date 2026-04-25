@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo-header.png" />
         <link rel="alternate" type="application/rss+xml" title="DailyTrend RSS" href="/rss.xml" />
       </head>
       <body className="min-h-screen flex flex-col">

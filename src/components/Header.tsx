@@ -26,9 +26,9 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-[var(--border)]" style={{background:'var(--bg-header)', backdropFilter:'blur(20px)'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center h-14 relative">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 pr-14 md:pr-16">
             <Link href="/" className="flex items-center gap-2.5 shrink-0">
-              <img src="/logo.png" alt="DailyTrend" className="h-8 w-8 rounded-lg" />
+              <img src="/logo-header.png" alt="DailyTrend" className="h-8 w-8 rounded-lg" />
               <span className="text-[15px] font-extrabold tracking-tight" style={{color:'var(--text-primary)'}}>Daily<span style={{color:'var(--accent)'}}>Trend</span></span>
             </Link>
 
