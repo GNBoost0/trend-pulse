@@ -6,17 +6,17 @@ import { topics } from '@/lib/topics';
 export default function Footer() {
   return (
     <footer className="mt-20 border-t border-[var(--border)]" style={{background:'var(--bg-secondary)'}}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        {/* Logo + Menus centrés ensemble */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
+      <div className="px-4 sm:px-6 lg:px-8 py-10">
+        {/* Mobile: tout empilé pleine largeur | Desktop: logo+menus centrés */}
+        <div className="flex flex-col md:flex-row items-center md:justify-center gap-8 mb-8">
           {/* Logo + nom */}
-          <div className="flex flex-col items-center shrink-0">
-            <img src="/logo.png" alt="DailyTrend" className="w-full max-w-[200px] md:max-w-[160px]" />
+          <div className="flex flex-col items-center shrink-0 w-full md:w-auto">
+            <img src="/logo.png" alt="DailyTrend" className="w-3/4 max-w-[220px] md:max-w-[160px]" />
             <span className="text-3xl font-extrabold tracking-tight mt-3 inline-block" style={{color:'var(--text-primary)'}}>Daily<span style={{color:'var(--accent)'}}>Trend</span></span>
           </div>
 
-          {/* Menus */}
-          <div className="flex flex-col sm:flex-row gap-6 md:gap-10">
+          {/* Menus — empilés mobile, côte à côte desktop */}
+          <div className="flex flex-col sm:flex-row gap-6 md:gap-10 w-full sm:w-auto">
             <div>
               <h4 className="text-[11px] font-semibold uppercase tracking-wider mb-3" style={{color:'var(--text-muted)'}}>Rubriques</h4>
               {topics.map(t => (
@@ -32,9 +32,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Newsletter — en dessous, centré */}
-        <div className="border-t border-[var(--border)] pt-6 mb-6 flex justify-center">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-3 w-full max-w-lg">
+        {/* Newsletter — en dessous */}
+        <div className="border-t border-[var(--border)] pt-6 mb-6">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 max-w-lg">
             <div className="flex-1">
               <h4 className="text-sm font-bold mb-1" style={{color:'var(--text-primary)'}}>Newsletter</h4>
               <p className="text-xs" style={{color:'var(--text-muted)'}}>Le récap quotidien dans votre boîte.</p>
