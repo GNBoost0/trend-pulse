@@ -87,14 +87,15 @@ export default async function ArticlePage({ params }: { params: { topic: string;
                 </div>
               )}
 
-              {/* Topics */}
+              {/* Topics — cartes comme sur l'accueil */}
               <div>
                 <h3 className="text-base font-extrabold mb-4" style={{color:'var(--text-primary)'}}>Rubriques</h3>
-                <div className="space-y-0.5">
+                <div className="grid grid-cols-2 gap-2">
                   {topics.map(t => (
-                    <Link key={t.id} href={`/${t.slug}`} className="flex items-center gap-2 px-2 py-2 rounded-lg transition-colors hover:opacity-80" style={{color:'var(--text-secondary)'}}>
-                      <span className="text-sm">{t.icon}</span>
-                      <span className="text-xs">{t.name}</span>
+                    <Link key={t.id} href={`/${t.slug}`}
+                      className="group flex flex-col items-center justify-center gap-1.5 p-3 rounded-xl transition-all hover:opacity-90" style={{background:'var(--bg-secondary)',border:'1px solid var(--border)'}}>
+                      <span className="text-2xl group-hover:scale-110 transition-transform">{t.icon}</span>
+                      <span className="text-[11px] font-bold text-center leading-tight" style={{color:'var(--text-secondary)'}}>{t.name}</span>
                     </Link>
                   ))}
                 </div>

@@ -62,9 +62,9 @@ export default function Home() {
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
               {topics.map(topic => (
                 <Link key={topic.id} href={`/${topic.slug}`}
-                  className="group flex flex-col items-center gap-2 p-5 rounded-xl transition-all hover:opacity-90" style={{background:'var(--bg-secondary)',border:'1px solid var(--border)'}}>
+                  className="group flex flex-col items-center justify-center gap-2 p-5 rounded-xl transition-all hover:opacity-90" style={{background:'var(--bg-secondary)',border:'1px solid var(--border)'}}>
                   <span className="text-3xl group-hover:scale-110 transition-transform">{topic.icon}</span>
-                  <span className="text-xs font-bold transition-colors" style={{color:'var(--text-secondary)'}}>{topic.name}</span>
+                  <span className="text-xs font-bold text-center leading-tight" style={{color:'var(--text-secondary)'}}>{topic.name}</span>
                 </Link>
               ))}
             </div>
