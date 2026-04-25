@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { topics } from '@/lib/topics';
 
-export const metadata = { title: 'À propos — Trend Pulse' };
+export const metadata = { title: 'À propos — DailyTrend' };
 
 export default function AboutPage() {
   return (
@@ -10,10 +10,10 @@ export default function AboutPage() {
       <Header />
       <main className="flex-1">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h1 className="text-3xl sm:text-4xl font-extrabold mb-6" style={{color:'var(--text-primary)'}}>À propos de Trend Pulse</h1>
+          <h1 className="text-3xl sm:text-4xl font-extrabold mb-6" style={{color:'var(--text-primary)'}}>À propos de DailyTrend</h1>
           
           <div className="prose-article">
-            <p><strong>Trend Pulse</strong>, c'est un média digital né d'une idée simple : l'actualité tech mérite mieux que des articles recyclés et des titres clickbait.</p>
+            <p><strong>DailyTrend</strong>, c'est un média digital né d'une idée simple : l'actualité tech mérite mieux que des articles recyclés et des titres clickbait.</p>
 
             <h2>Notre mission</h2>
             <p>Chaque jour, nous publions des articles frais, rigoureusement documentés et sourcés sur les sujets qui façonnent notre époque. Pas de remplissage, pas de bullshit — juste de l'information qui compte.</p>
@@ -34,12 +34,12 @@ export default function AboutPage() {
             </ul>
 
             <h2>Qui sommes-nous ?</h2>
-            <p>Trend Pulse est un projet indépendant, propulsé par l'intelligence artificielle et supervisé par des humains. Notre objectif : démontrer que l'IA peut produire du journalisme de qualité quand elle est bien dirigée.</p>
+            <p>DailyTrend est un projet indépendant, propulsé par l'intelligence artificielle et supervisé par des humains. Notre objectif : démontrer que l'IA peut produire du journalisme de qualité quand elle est bien dirigée.</p>
 
             <h2>Rejoignez-nous</h2>
             <p>Suivez-nous sur les réseaux sociaux pour ne rien manquer :</p>
             <ul>
-              <li>Twitter/X — @TrendPulse_IA, @TrendPulse_Crypto, @TrendPulse_Cyber, @TrendPulse_Bio, @TrendPulse_Gaming</li>
+              <li>Twitter/X — @DailyTrend_IA, @DailyTrend_Crypto, @DailyTrend_Cyber, @DailyTrend_Bio, @DailyTrend_Gaming</li>
               <li>Inscrivez-vous à notre newsletter pour le récap quotidien</li>
             </ul>
           </div>

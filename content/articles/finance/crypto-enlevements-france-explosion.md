@@ -5,7 +5,7 @@ date: "2026-04-25"
 topic: "finance"
 tags: ["crypto", "criminalité", "sécurité", "finance", "investissement", "France", "assurance"]
 image: "/images/articles/crypto-enlevements-france.jpg"
-author: "Trend Pulse"
+author: "DailyTrend"
 readingTime: 10
 ---
 

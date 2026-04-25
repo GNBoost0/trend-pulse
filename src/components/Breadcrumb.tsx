@@ -13,7 +13,7 @@ export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
       '@type': 'ListItem',
       position: i + 1,
       name: item.label,
-      ...(item.href ? { item: `https://trend-pulse.vercel.app${item.href}` } : {}),
+      ...(item.href ? { item: `https://dailytrend.vercel.app${item.href}` } : {}),
     })),
   };
 

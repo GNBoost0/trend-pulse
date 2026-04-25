@@ -5,7 +5,7 @@ date: "2026-04-25"
 topic: "crypto"
 tags: ["Bitcoin", "Crypto", "Analyse", "Marchés", "Blockchain", "ETF"]
 image: "/images/articles/bitcoin-77k.jpg"
-author: "Trend Pulse"
+author: "DailyTrend"
 readingTime: 8
 ---
 

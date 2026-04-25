@@ -5,7 +5,7 @@ date: "2026-04-25"
 topic: "cyber"
 tags: ["ANTS", "Fuite de données", "Cybersécurité", "France", "Identité", "Protection", "Hack"]
 image: "/images/articles/fuite-ants.jpg"
-author: "Trend Pulse"
+author: "DailyTrend"
 readingTime: 9
 ---
 

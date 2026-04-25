@@ -6,7 +6,7 @@ export const topics = [
     icon: '🤖',
     color: 'from-purple-500 to-indigo-600',
     description: 'Dernières avancées en IA, LLM, machine learning et outils intelligents.',
-    twitter: '@TrendPulse_IA',
+    twitter: '@DailyTrend_IA',
   },
   {
     id: 'crypto',
@@ -15,7 +15,7 @@ export const topics = [
     icon: '💰',
     color: 'from-amber-500 to-orange-600',
     description: 'Marchés crypto, analyses, DeFi, NFT et regulation.',
-    twitter: '@TrendPulse_Crypto',
+    twitter: '@DailyTrend_Crypto',
   },
   {
     id: 'cyber',
@@ -24,7 +24,7 @@ export const topics = [
     icon: '🛡️',
     color: 'from-emerald-500 to-teal-600',
     description: 'Menaces, protection, VPN, fuites de données et vie privée.',
-    twitter: '@TrendPulse_Cyber',
+    twitter: '@DailyTrend_Cyber',
   },
   {
     id: 'bien-etre',
@@ -33,7 +33,7 @@ export const topics = [
     icon: '🧬',
     color: 'from-pink-500 to-rose-600',
     description: 'Santé, optimisation, nutrition, sommeil et performance.',
-    twitter: '@TrendPulse_Bio',
+    twitter: '@DailyTrend_Bio',
   },
   {
     id: 'gaming',
@@ -42,7 +42,7 @@ export const topics = [
     icon: '🎮',
     color: 'from-cyan-500 to-blue-600',
     description: 'Jeux vidéo, tournois, reviews et industry news.',
-    twitter: '@TrendPulse_Gaming',
+    twitter: '@DailyTrend_Gaming',
   },
   {
     id: 'finance',
@@ -51,7 +51,7 @@ export const topics = [
     icon: '📈',
     color: 'from-green-500 to-emerald-600',
     description: 'Investissement, assurance, entrepreneuriat, B2B et stratégies financières.',
-    twitter: '@TrendPulse_Finance',
+    twitter: '@DailyTrend_Finance',
   },
 ] as const;
 

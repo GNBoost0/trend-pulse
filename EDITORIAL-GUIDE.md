@@ -25,7 +25,7 @@
 
 8. **La voix** — Écrire comme on parle à un ami intelligent. Naturel, direct, sans jargon inutile. Pas de "Il est important de noter que..." ou "Dans le cadre de...". Juste : "Voici ce qui se passe."
 
-### Structure type d'un article Trend Pulse
+### Structure type d'un article DailyTrend
 
 ```
 HOOK (1-2 phrases) → Accroche émotionnelle
@@ -57,11 +57,11 @@ CTA → Invitation à lire d'autres articles / s'abonner
 - **H2/H3** : Découpage logique, mots-clés secondaires dans les titres
 - **Paragraphes** : 2-4 phrases max, toujours
 - **Images** : Alt text descriptif avec mot-clé, nom de fichier SEO-friendly
-- **Liens internes** : 2-3 liens vers d'autres articles Trend Pulse par article
+- **Liens internes** : 2-3 liens vers d'autres articles DailyTrend par article
 - **Schema.org** : Article markup automatique via le composant Next.js
 - **URL** : Courte, mots-clés séparés par tirets, pas de stopwords
 
-### Spécifications Trend Pulse
+### Spécifications DailyTrend
 
 - **Longueur** : 1500-2500 mots minimum par article
 - **Langue** : Français, tutoiement, ton direct et intelligent
@@ -78,7 +78,7 @@ CTA → Invitation à lire d'autres articles / s'abonner
 Ce prompt doit être utilisé par le script cron quotidien pour chaque article généré :
 
 ```
-Tu es un journaliste tech senior pour Trend Pulse, un média français digital. Tu écris des articles qui captivent, informent et engagent.
+Tu es un journaliste tech senior pour DailyTrend, un média français digital. Tu écris des articles qui captivent, informent et engagent.
 
 ## Ton identité
 - Tu es un expert dans ton domaine mais tu n'es jamais condescendant
@@ -99,7 +99,7 @@ Tu es un journaliste tech senior pour Trend Pulse, un média français digital. 
 9. Pas de superlatifs vides ("incroyable", "révolutionnaire") sans preuve concrète.
 10. Ne commence JAMAIS par "Dans cet article..." ou "Aujourd'hui nous allons..."
 11. Ne finis JAMAIS par "En conclusion..." — finis simplement.
-12. Ajoute 2-3 liens internes vers d'autres articles Trend Pulse (format : texte descriptif entre crochets suivi de l'URL).
+12. Ajoute 2-3 liens internes vers d'autres articles DailyTrend (format : texte descriptif entre crochets suivi de l'URL).
 13. Minimum 1500 mots.
 
 ## Format de sortie
@@ -112,7 +112,7 @@ date: "[DATE DU JOUR]"
 topic: "[topic slug: ia|crypto|cyber|bien-etre|gaming]"
 tags: ["[tag1]", "[tag2]", "[tag3]", "[tag4]"]
 image: "/images/[topic]/[slug].jpg"
-author: "Trend Pulse"
+author: "DailyTrend"
 readingTime: [nombre estimé]
 ---
 
@@ -145,7 +145,7 @@ Pour chaque article, génère une image via Pollinations.ai avec un prompt spéc
 
 ### Twitter/X
 ```
-Tu gères le compte Twitter @TrendPulse_[Topic] pour Trend Pulse.
+Tu gères le compte Twitter @TrendPulse_[Topic] pour DailyTrend.
 Rédige un thread Twitter (3-5 tweets) pour promouvoir un nouvel article.
 
 Règles :
@@ -160,7 +160,7 @@ Règles :
 
 ### Facebook
 ```
-Rédige un post Facebook pour promouvoir un nouvel article Trend Pulse.
+Rédige un post Facebook pour promouvoir un nouvel article DailyTrend.
 
 Règles :
 - Accroche en première ligne (avant le "Voir plus")
@@ -172,7 +172,7 @@ Règles :
 
 ### Instagram
 ```
-Rédige un post Instagram (caption) pour promouvoir un article Trend Pulse.
+Rédige un post Instagram (caption) pour promouvoir un article DailyTrend.
 
 Règles :
 - Caption concise mais informative
@@ -184,7 +184,7 @@ Règles :
 
 ### TikTok / YouTube Shorts
 ```
-Rédige un script vidéo de 30-60 secondes pour TikTok/Shorts basé sur un article Trend Pulse.
+Rédige un script vidéo de 30-60 secondes pour TikTok/Shorts basé sur un article DailyTrend.
 
 Règles :
 - Premier crochet (3 premières secondes) = accroche ultra-forte
@@ -196,7 +196,7 @@ Règles :
 
 ### Reddit
 ```
-Rédige un post Reddit pour partager un article Trend Pulse dans le subreddit pertinent.
+Rédige un post Reddit pour partager un article DailyTrend dans le subreddit pertinent.
 
 Règles :
 - Titre descriptif et honnête (pas de clickbait)

@@ -38,7 +38,7 @@ export default function Home() {
                     <h2 className="text-sm font-bold" style={{color:'var(--text-primary)'}}>{topic.name}</h2>
                     <span className="text-[11px] px-1.5 py-0.5 rounded" style={{background:'var(--tag-bg)',color:'var(--tag-text)'}}>{topicArticles.length}</span>
                   </div>
-                  <Link href={`/${topic.slug}`} className="text-[12px] font-medium text-indigo-500 hover:text-indigo-400 transition-colors">Tout voir →</Link>
+                  <Link href={`/${topic.slug}`} className="text-[12px] font-medium hover:opacity-80 transition-colors" style={{color:'var(--accent)'}}>Tout voir →</Link>
                 </div>
                 
                 <div className="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory scrollbar-hide" style={{scrollbarWidth:'none'}}>
@@ -59,7 +59,7 @@ export default function Home() {
               <h2 className="text-xs font-bold uppercase tracking-wider" style={{color:'var(--text-muted)'}}>Rubriques</h2>
               <div className="flex-1 h-px" style={{background:'var(--border)'}} />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
               {topics.map(topic => (
                 <Link key={topic.id} href={`/${topic.slug}`}
                   className="group flex flex-col items-center gap-2 p-5 rounded-xl transition-all hover:opacity-90" style={{background:'var(--bg-secondary)',border:'1px solid var(--border)'}}>

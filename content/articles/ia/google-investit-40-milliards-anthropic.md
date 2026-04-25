@@ -5,7 +5,7 @@ date: "2026-04-25"
 topic: "ia"
 tags: ["Google", "Anthropic", "Claude", "IA", "Investissement", "Intelligence Artificielle"]
 image: "/images/articles/google-anthropic.jpg"
-author: "Trend Pulse"
+author: "DailyTrend"
 readingTime: 9
 ---
 

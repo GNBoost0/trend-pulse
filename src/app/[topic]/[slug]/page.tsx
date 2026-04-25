@@ -27,7 +27,7 @@ export default async function ArticlePage({ params }: { params: { topic: string;
   const related = getRelatedArticles(article, 5);
   const html_ = await md(article.content);
   const dateStr = new Date(article.date).toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' });
-  const ld = { '@context':'https://schema.org','@type':'Article', headline:article.title, description:article.description, datePublished:article.date, image:article.image, author:{'@type':'Person',name:article.author}, publisher:{'@type':'Organization',name:'Trend Pulse'} };
+  const ld = { '@context':'https://schema.org','@type':'Article', headline:article.title, description:article.description, datePublished:article.date, image:article.image, author:{'@type':'Person',name:article.author}, publisher:{'@type':'Organization',name:'DailyTrend'} };
 
   return (
     <>
@@ -62,7 +62,7 @@ export default async function ArticlePage({ params }: { params: { topic: string;
             {/* Meta */}
             <div className="flex flex-wrap items-center gap-4 mt-6 text-xs text-gray-300" style={{textShadow:'0 1px 3px rgba(0,0,0,0.7)'}}>
               <span className="flex items-center gap-1.5">
-                <div className="w-6 h-6 rounded-full bg-indigo-500/30 flex items-center justify-center text-[9px] font-bold text-white backdrop-blur-sm">TP</div>
+                <div className="w-6 h-6 rounded-full bg-[var(--tag-bg)] flex items-center justify-center text-[9px] font-bold text-white backdrop-blur-sm">TP</div>
                 {article.author}
               </span>
               <time>{dateStr}</time>

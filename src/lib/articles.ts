@@ -41,7 +41,7 @@ export function getAllArticles(): Article[] {
         topic: data.topic || topic,
         tags: data.tags || [],
         image: data.image || '',
-        author: data.author || 'Trend Pulse',
+        author: data.author || 'DailyTrend',
         readingTime: data.readingTime || Math.ceil(content.split(' ').length / 200),
         content,
       });
@@ -70,7 +70,7 @@ export function getArticle(topicSlug: string, articleSlug: string): Article | nu
     topic: data.topic || topicSlug,
     tags: data.tags || [],
     image: data.image || '',
-    author: data.author || 'Trend Pulse',
+    author: data.author || 'DailyTrend',
     readingTime: data.readingTime || Math.ceil(content.split(' ').length / 200),
     content,
   };

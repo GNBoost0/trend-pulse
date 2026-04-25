@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-export const metadata = { title: 'Contact — Trend Pulse' };
+export const metadata = { title: 'Contact — DailyTrend' };
 
 export default function ContactPage() {
   return (
@@ -15,7 +15,7 @@ export default function ContactPage() {
             <p>Une question, une suggestion, un partenariat ou une correction à apporter ? On est à l'écoute.</p>
 
             <h2>Nous contacter</h2>
-            <p>Le moyen le plus simple : envoyez-nous un email à <strong>contact@trend-pulse.fr</strong></p>
+            <p>Le moyen le plus simple : envoyez-nous un email à <strong>contact@dailytrend.fr</strong></p>
 
             <h2>Signaler une erreur</h2>
             <p>L'exactitude est notre priorité. Si vous repérez une information incorrecte, incomplète ou obsolète dans un de nos articles, n'hésitez pas à nous le signaler. On corrige rapidement.</p>
@@ -26,8 +26,8 @@ export default function ContactPage() {
             <h2>Réseaux sociaux</h2>
             <p>Retrouvez-nous aussi sur :</p>
             <ul>
-              <li><strong>Twitter/X</strong> — @TrendPulse_IA et les comptes par rubrique</li>
-              <li><strong>Reddit</strong> — u/TrendPulse</li>
+              <li><strong>Twitter/X</strong> — @DailyTrend_IA et les comptes par rubrique</li>
+              <li><strong>Reddit</strong> — u/DailyTrend</li>
             </ul>
           </div>
         </div>

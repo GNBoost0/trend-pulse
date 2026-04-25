@@ -5,7 +5,7 @@ date: "2026-04-25"
 topic: "gaming"
 tags: ["Saros", "PS5", "PlayStation", "Housemarque", "Test", "Action", "Rogue-lite"]
 image: "/images/articles/saros-ps5.jpg"
-author: "Trend Pulse"
+author: "DailyTrend"
 readingTime: 8
 ---
 

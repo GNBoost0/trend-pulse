@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Article } from '@/lib/articles';
 import { getTopicBySlug } from '@/lib/topics';
 
@@ -34,7 +33,7 @@ export default function ArticleCard({ article, variant = 'card' }: Props) {
             <div className="flex items-center gap-2 mb-3 text-[12px]" style={{color:'var(--text-muted)'}}>
               <time>{date}</time><span>·</span><span>{article.readingTime} min</span>
             </div>
-            <h2 className="text-xl lg:text-2xl font-extrabold leading-[1.25] mb-3 group-hover:text-indigo-500 transition-colors line-clamp-3" style={{color:'var(--text-primary)'}}>
+            <h2 className="text-xl lg:text-2xl font-extrabold leading-[1.25] mb-3 group-hover:opacity-80 transition-colors line-clamp-3" style={{color:'var(--text-primary)'}}>
               {article.title}
             </h2>
             <p className="text-sm leading-relaxed line-clamp-2" style={{color:'var(--text-secondary)'}}>{article.description}</p>
@@ -57,7 +56,7 @@ export default function ArticleCard({ article, variant = 'card' }: Props) {
           )}
         </div>
         <div className="min-w-0 flex-1">
-          <h4 className="text-[15px] font-semibold leading-snug line-clamp-2 group-hover:text-indigo-500 transition-colors" style={{color:'var(--text-primary)'}}>
+          <h4 className="text-[15px] font-semibold leading-snug line-clamp-2 group-hover:opacity-80 transition-colors" style={{color:'var(--text-primary)'}}>
             {article.title}
           </h4>
           <div className="flex items-center gap-1.5 mt-1.5 text-[12px]" style={{color:'var(--text-muted)'}}>
@@ -89,7 +88,7 @@ export default function ArticleCard({ article, variant = 'card' }: Props) {
           <div className="flex items-center gap-2 mb-2 text-[11px]" style={{color:'var(--text-muted)'}}>
             <time>{date}</time><span>·</span><span>{article.readingTime} min</span>
           </div>
-          <h3 className="text-[15px] font-bold leading-snug line-clamp-2 mb-2 group-hover:text-indigo-500 transition-colors" style={{color:'var(--text-primary)'}}>
+          <h3 className="text-[15px] font-bold leading-snug line-clamp-2 mb-2 group-hover:opacity-80 transition-colors" style={{color:'var(--text-primary)'}}>
             {article.title}
           </h3>
           <p className="text-[13px] line-clamp-2 flex-1 leading-relaxed" style={{color:'var(--text-secondary)'}}>{article.description}</p>

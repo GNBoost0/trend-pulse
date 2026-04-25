@@ -5,7 +5,7 @@ date: "2026-04-25"
 topic: "bien-etre"
 tags: ["Environnement", "IA", "Forêt", "Fontainebleau", "Santé", "Prévention", "Innovation"]
 image: "/images/articles/fontainebleau.jpg"
-author: "Trend Pulse"
+author: "DailyTrend"
 readingTime: 8
 ---
 

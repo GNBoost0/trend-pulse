@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { topic: string } }) {
   const topic = getTopicBySlug(params.topic);
   if (!topic) return {};
-  return { title: `${topic.name} — Trend Pulse`, description: topic.description };
+  return { title: `${topic.name} — DailyTrend`, description: topic.description };
 }
 
 export default function TopicPage({ params }: { params: { topic: string } }) {
