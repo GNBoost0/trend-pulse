@@ -23,10 +23,12 @@ export default function ArticleCard({ article, variant = 'card' }: Props) {
               </div>
             )}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[var(--bg-card)] hidden lg:block" />
-            <div className="absolute top-4 left-4">
-              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-black/50 backdrop-blur text-[11px] font-semibold text-white">
-                {topic?.icon} {topic?.name}
-              </span>
+            <div className="absolute bottom-4 left-4 flex flex-wrap gap-1">
+              {article.tags.slice(0, 3).map(tag => (
+                <span key={tag} className="px-2 py-0.5 rounded bg-black/40 backdrop-blur text-[10px] font-medium text-white">
+                  #{tag}
+                </span>
+              ))}
             </div>
           </div>
           <div className="lg:col-span-2 p-6 lg:p-8 flex flex-col justify-center">
@@ -78,10 +80,12 @@ export default function ArticleCard({ article, variant = 'card' }: Props) {
               <span className="text-5xl opacity-[0.15] group-hover:opacity-[0.22] group-hover:scale-110 transition-all duration-500">{topic?.icon}</span>
             </div>
           )}
-          <div className="absolute top-3 left-3">
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-black/40 backdrop-blur text-[10px] font-semibold text-white">
-              {topic?.icon} {topic?.name}
-            </span>
+          <div className="absolute bottom-3 right-3 flex flex-wrap justify-end gap-1">
+            {article.tags.slice(0, 3).map(tag => (
+              <span key={tag} className="px-2 py-0.5 rounded bg-black/40 backdrop-blur text-[10px] font-medium text-white">
+                #{tag}
+              </span>
+            ))}
           </div>
         </div>
         <div className="p-4 flex flex-col flex-1">

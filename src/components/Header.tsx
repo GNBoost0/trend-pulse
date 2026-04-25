@@ -50,8 +50,8 @@ export default function Header() {
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <img src="/logo-header.png" alt="DailyTrend" className="h-8 w-8 rounded-lg" />
-            <span className="text-[15px] font-extrabold tracking-tight" style={{color:'var(--text-primary)'}}>
+            <img src="/logo-header.png" alt="DailyTrend" className="h-9 w-9 rounded-lg" />
+            <span className="text-[28px] font-extrabold tracking-tight" style={{color:'var(--text-primary)'}}>
               Daily<span style={{color:'var(--accent)'}}>Trend</span>
             </span>
           </Link>
