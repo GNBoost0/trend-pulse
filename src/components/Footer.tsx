@@ -41,15 +41,32 @@ export default function Footer() {
             </div>
             <div className="flex gap-2">
               <button
-                onClick={() => {
-                  if ('serviceWorker' in navigator) {
-                    navigator.serviceWorker.register('/sw.js').then(reg => {
-                      Notification.requestPermission().then(perm => {
-                        if (perm === 'granted') {
-                          localStorage.setItem('dt-engagement', 'notifications');
-                        }
-                      });
-                    });
+                onClick={async () => {
+                  if ('serviceWorker' in navigator && 'PushManager' in window) {
+                    try {
+                      const reg = await navigator.serviceWorker.register('/sw.js');
+                      const perm = await Notification.requestPermission();
+                      if (perm === 'granted') {
+                        const VAPID_KEY = 'BJz_Xeqn5j15mWV3zJsOyF6WY76MAPvuUF56JRD7goZvVQ7GYqIhPgn1pYsw7vrhDF10UJ7qU807tG5OYDRNP3I';
+                        const sub = await reg.pushManager.subscribe({
+                          userVisibleOnly: true,
+                          applicationServerKey: VAPID_KEY,
+                        });
+                        await fetch('/api/push-subscribe', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({ action: 'subscribe', subscription: sub.toJSON() }),
+                        });
+                        localStorage.setItem('dt-engagement', 'notifications');
+                        alert('✅ Notifications activées !');
+                      } else {
+                        alert('❌ Permissions refusées. Tu peux les activer dans les paramètres du navigateur.');
+                      }
+                    } catch (e) {
+                      alert('⚠️ Erreur: ' + (e as Error).message);
+                    }
+                  } else {
+                    alert('⚠️ Ton navigateur ne supporte pas les notifications push.');
                   }
                 }}
                 className="px-4 py-2 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-opacity flex items-center gap-1.5"
