@@ -25,21 +25,23 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border)]" style={{background:'var(--bg-header)', backdropFilter:'blur(20px)'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14">
-          <Link href="/" className="flex items-center gap-2.5 shrink-0">
-            <img src="/logo.png" alt="DailyTrend" className="h-8 w-8 rounded-lg" />
-            <span className="text-[15px] font-extrabold tracking-tight" style={{color:'var(--text-primary)'}}>Daily<span style={{color:'var(--accent)'}}>Trend</span></span>
-          </Link>
+        <div className="flex items-center justify-center h-14 relative">
+          <div className="flex items-center gap-6">
+            <Link href="/" className="flex items-center gap-2.5 shrink-0">
+              <img src="/logo.png" alt="DailyTrend" className="h-8 w-8 rounded-lg" />
+              <span className="text-[15px] font-extrabold tracking-tight" style={{color:'var(--text-primary)'}}>Daily<span style={{color:'var(--accent)'}}>Trend</span></span>
+            </Link>
 
-          <nav className="hidden md:flex items-center gap-0.5">
-            {topics.map(topic => (
-              <Link key={topic.id} href={`/${topic.slug}`} className="px-3 py-1.5 rounded-md text-[13px] font-medium hover:bg-[var(--tag-bg)] transition-colors" style={{color:'var(--text-secondary)'}}>
-                {topic.icon} <span className="ml-1">{topic.name}</span>
-              </Link>
-            ))}
-          </nav>
+            <nav className="hidden md:flex items-center gap-0.5">
+              {topics.map(topic => (
+                <Link key={topic.id} href={`/${topic.slug}`} className="px-3 py-1.5 rounded-md text-[13px] font-medium hover:bg-[var(--tag-bg)] transition-colors" style={{color:'var(--text-secondary)'}}>
+                  {topic.icon} <span className="ml-1">{topic.name}</span>
+                </Link>
+              ))}
+            </nav>
+          </div>
 
-          <div className="flex items-center gap-1">
+          <div className="absolute right-4 sm:right-6 lg:right-8 flex items-center gap-1">
             <button onClick={toggleTheme} className="p-2 rounded-md hover:bg-[var(--tag-bg)] transition-colors" style={{color:'var(--text-muted)'}} title={dark ? 'Mode jour' : 'Mode nuit'}>
               {dark ? (
                 <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
