@@ -44,6 +44,15 @@ export const topics = [
     description: 'Jeux vidéo, tournois, reviews et industry news.',
     twitter: '@TrendPulse_Gaming',
   },
+  {
+    id: 'finance',
+    name: 'Finance & Business',
+    slug: 'finance',
+    icon: '📈',
+    color: 'from-green-500 to-emerald-600',
+    description: 'Investissement, assurance, entrepreneuriat, B2B et stratégies financières.',
+    twitter: '@TrendPulse_Finance',
+  },
 ] as const;
 
 export type Topic = typeof topics[number];

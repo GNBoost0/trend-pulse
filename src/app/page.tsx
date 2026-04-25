@@ -16,7 +16,7 @@ export default function Home() {
         {hero && (
           <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-2">
             <div className="flex items-center gap-3 mb-5">
-              <span className="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider" style={{background:'var(--tag-bg)',color:'var(--tag-text)'}}>Article du jour</span>
+              <span className="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider" style={{background:'var(--tag-bg)',color:'var(--tag-text)'}}>Articles conseillés du jour</span>
               <div className="flex-1 h-px" style={{background:'var(--border)'}} />
             </div>
             <div className="max-w-md">

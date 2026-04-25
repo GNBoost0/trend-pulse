@@ -78,6 +78,12 @@
   .prose-article code { background: var(--tag-bg); padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em; color: var(--accent); }
   .prose-article img { border-radius: 12px; margin: 2rem 0; width: 100%; }
 
+  /* Sources section — smaller text */
+  .prose-article h2:last-of-type + ul,
+  .prose-article h2:last-of-type + ol {
+    font-size: 0.85rem;
+  }
+
   /* Card */
   .tp-card {
     background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;

@@ -46,8 +46,8 @@ export default function ArticleCard({ article, variant = 'card' }: Props) {
 
   if (variant === 'compact') return (
     <Link href={`/${article.topic}/${article.slug}`} className="group block py-3 last:border-0" style={{borderBottom:'1px solid var(--border)'}}>
-      <div className="flex gap-3">
-        <div className="w-16 h-12 shrink-0 rounded-lg overflow-hidden" style={{background:'var(--bg-secondary)'}}>
+      <div className="flex gap-4">
+        <div className="w-24 h-16 shrink-0 rounded-lg overflow-hidden" style={{background:'var(--bg-secondary)'}}>
           {hasImage ? (
             <img src={article.image} alt="" className="w-full h-full object-cover" />
           ) : (
@@ -57,10 +57,10 @@ export default function ArticleCard({ article, variant = 'card' }: Props) {
           )}
         </div>
         <div className="min-w-0 flex-1">
-          <h4 className="text-[13px] font-semibold leading-snug line-clamp-2 group-hover:text-indigo-500 transition-colors" style={{color:'var(--text-primary)'}}>
+          <h4 className="text-[15px] font-semibold leading-snug line-clamp-2 group-hover:text-indigo-500 transition-colors" style={{color:'var(--text-primary)'}}>
             {article.title}
           </h4>
-          <div className="flex items-center gap-1.5 mt-1 text-[11px]" style={{color:'var(--text-muted)'}}>
+          <div className="flex items-center gap-1.5 mt-1.5 text-[12px]" style={{color:'var(--text-muted)'}}>
             <span>{date}</span><span>·</span><span>{article.readingTime} min</span>
           </div>
         </div>

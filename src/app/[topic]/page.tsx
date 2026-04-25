@@ -8,7 +8,7 @@ import { getArticlesByTopic } from '@/lib/articles';
 
 export const dynamicParams = false;
 export async function generateStaticParams() {
-  return [{topic:'ia'},{topic:'crypto'},{topic:'cyber'},{topic:'bien-etre'},{topic:'gaming'}];
+  return [{topic:'ia'},{topic:'crypto'},{topic:'cyber'},{topic:'bien-etre'},{topic:'gaming'},{topic:'finance'}];
 }
 export async function generateMetadata({ params }: { params: { topic: string } }) {
   const topic = getTopicBySlug(params.topic);
